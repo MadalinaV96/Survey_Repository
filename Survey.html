@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="surveylayout">
+        <meta name="author" content="VirvareiMadalina">
+        <meta name="keywords" content="css,html">
+        <link rel="stylesheet" type="text/css" href="resources/Survey.css">
+        <title>Survey</title>
+    <body>
+        <main class="wrapper-01">
+            <div class="first-page-wrapper">
+                <div class="image-wrapper">
+                <img src="assets/step-1.png" alt="01">
+                </div>
+                <h1>Notifications Survey</h1> 
+            </div>
+            <div class="form-wrapper">
+            <form>
+                <p>We're working on our notification system to make our product work better.<br>The survey consists in serveral questions and usually takes 5-7 minutes to complete.</p>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your answer">
+                <p>Are you an admin or a member on our Board?</p>
+                <input type="radio" id="admin" name="role" value="Admin">
+                <label for="admin">Admin</label><br>
+                <input type="radio" id="member" name="role" value="Member">
+                <label for="member">Member</label>
+                <p>How do you collaborate in our Board?</p>
+                <input type="radio" id="create" name="create" value="create">
+                <label for="create">Create and edit content</label><br>
+                <input type="radio" id="comment" name="comment" value="comment">
+                <label for="comment">Comment and leave comment</label><br>
+                <input type="radio" id="review" name="review" value="review">
+                <label for="review">Just review created comment</label><br>
+                <input type="radio" id="other" name="other" value="other">
+                <label for="other">Other:</label>
+                <input type="text" id="text" name="text" >
+            </form>
+            </div>
+            <div class="next-wrapper">
+            <div class="next"><a href="Survey2.html" target="_blank"> Next</a> </div></div>
+            </main>
+    </body>
+    </head>
+</html>
