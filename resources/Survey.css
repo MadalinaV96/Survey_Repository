@@ -10,6 +10,7 @@ body, html{
     width: 75%; 
     height:100%;
     padding: 10px;
+    /* acesti 200px iti centreaza manual, daca nu ma insel. de ce nu ai optat pentru auto? */
     margin: 0px 200px;
     box-sizing: border-box;
     /*border: 2px solid red;*/
@@ -48,19 +49,22 @@ body, html{
     align-content: flex-start;
     margin: 70px 0px;
     padding:3px 0;
+    /* cred ca am zis de foarte multe ori deja ca aceste valori ar trebui sa traga un semnal de alarma. titlul aici, putea fi pozitionat absolut fata de parintele lui relative, adica .first-page-wrapper */
     margin-left: -260px;
     background-color: #afafaf;
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
 }
 .form-wrapper{
+    /* atentie la sintaxa, te rog, ai un "x" scapat aici */
     width: 100%x;
     height: auto;;
     /*border: red 2px solid;*/
     display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    /* observ o trecere de la pozitionare la margin cu valori mari sau negative, eu, personal cred ca te complici putin singura, doar pentru ca vrei sa faci manual totul, dar iti va crea probleme asta */
     margin-top: -20px;
 }
 form{
@@ -178,6 +182,7 @@ a:hover .smile-face {
    background-color: #38daa1;
 }
 .expectations{
+    /* se putea specifica un width pe form-wrapper si apoi sa se mearga la 100%, nu pe fiecare in parte. Daca se schimba design-ul, trebuie sa mergi pe fiecare in parte si sa schimbi din nou */
     width: 500px;
     height: 55px;
     display: flex;

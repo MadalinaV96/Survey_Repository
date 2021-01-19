@@ -9,6 +9,7 @@
         <title>Survey</title>
     <body>
         <main class="wrapper-01">
+            <!-- atentie, acesta nu este un wrapper pentru toata pagina, ci doar pentru header, deci putea fi folosit un <header>, mult mai corect din punct de vedere semantic -->
             <div class="first-page-wrapper">
                 <div class="image-wrapper">
                 <img src="assets/step-1.png" alt="01">
@@ -17,6 +18,8 @@
             </div>
             <div class="form-wrapper">
             <form>
+                <!-- elementele sunt foarte inghesuite, atat in cod, cat si in UI, si este greu de citit codul, asta este si scopul wrapper-elor, sa ajute in acest sens -->
+                <!-- as propune sa mai lucram putin aici, sa adaugam niste wrapper-e si sa spatiem putin -->
                 <p>We're working on our notification system to make our product work better.<br>The survey consists in serveral questions and usually takes 5-7 minutes to complete.</p>
                 <label for="email">Enter your email:</label><br>
                 <input type="email" id="email" name="email" placeholder="Your answer">
@@ -26,6 +29,7 @@
                 <input type="radio" id="member" name="role" value="Member">
                 <label for="member">Member</label>
                 <p>How do you collaborate in our Board?</p>
+                <!-- atentie, si aici avem nevoie ca radio button sa fie grupate de aceeasi valoare pt atributul name, altfel nu sunt mutual exclusive -->
                 <input type="radio" id="create" name="create" value="create">
                 <label for="create">Create and edit content</label><br>
                 <input type="radio" id="comment" name="comment" value="comment">
